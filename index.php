@@ -5,7 +5,9 @@ $description = 'FUNDACION HELP es una organización de Educación e Investigaci�
 $keywords = 'INSTITUCIÓN DE EDUCACIÓN, CAPACITACION, HABILITACION, REHABILITACION Y TRABAJO SOCIAL.' ; 
       ?>
     <?php include 'lib/head.php'; ?>
+        <div class="gradient--radius">
 
+        </div>
         <section style="filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2525b', endColorstr='#c52a33',GradientType=1 );">
             <div class="top-bar">
                 <div class="left">
@@ -39,10 +41,10 @@ $keywords = 'INSTITUCIÓN DE EDUCACIÓN, CAPACITACION, HABILITACION, REHABILITAC
                 </div>
                 <div class="left">
                     <div class="left--container">
-                        <div class="icon"><a href="" target="_blank"><i class="icon-facebook"></i></a></div>
-                        <div class="icon"><a href="" target="_blank"><i class="icon-instagram"></i></a></div>
-                        <div class="icon"><a href="" target="_blank"><i class="icon-twitter"></i></a></div>
-                        <div class="icon"><a href="" target="_blank"><i class="icon-youtube"></i></a></div>
+                        <div class="icon"><a href="https://www.facebook.com/fundahelp/" target="_blank"><i class="icon-facebook"></i></a></div>
+                        <div class="icon"><a href="https://www.instagram.com/fundacionh.e.l.p/" target="_blank"><i class="icon-instagram"></i></a></div>
+                        <div class="icon"><a href="https://twitter.com/FundaHELP" target="_blank"><i class="icon-twitter"></i></a></div>
+                        <div class="icon"><a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a></div>
                     </div>
                 </div>
 

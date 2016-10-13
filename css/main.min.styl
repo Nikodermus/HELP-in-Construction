@@ -101,10 +101,51 @@ img
     transform: scale( .95 );
   }
 }
+@keyframes heartbeat-o
+{
+  0%
+  {
+    opacity: .5;
+  }
+  20%
+  {
+    opacity: 1;
+  }
+  40%
+  {
+    opacity: .5;
+  }
+  60%
+  {
+    opacity: 1;
+  }
+  90%
+  {
+    opacity: .5;
+  }
+  100%
+  {
+    opacity: .5;
+  }
+}
 
-section
-    height 100vh
+.gradient--radius
+    background radial-gradient(ellipse at center, rgba(226, 82, 91, 0.5) 0%,rgba(197, 42, 51, .3) 40%)
     width 100vw
+    height 100vw
+    position fixed
+    margin auto
+    top 0
+    left 0
+    bottom 0
+    right 0
+    opacity 1
+    animation heartbeat-o 1.5s infinite
+    background-blend-mode overlay
+    
+section
+    height 100%
+    width 100%
     padding help-master
     text-align center
     position relative
@@ -117,11 +158,13 @@ section
         top help-master
         width 100vw
         padding 0 help-master
+        z-index 10
     .bottom-bar
         position absolute
         bottom help-master
         width 100vw
         padding 0 help-master
+        z-index 10
         .left
             position absolute
             bottom -2rem
@@ -182,18 +225,21 @@ section
 // Media Query
  
 @media (max-width: 41.8125rem) //Desktop
+    .gradient--radius
+        display none
     section
         .main-image
             width 50vw
             height 50vw
+            animation-play-state paused
         .bottom-bar
             bottom 0
+            .left
+                width auto !important
             .left
             .right
                 float none
                 position static !important
-                .left--container
-                    width 88vw
                 .icon
                     width 25%
                 p
