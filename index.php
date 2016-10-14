@@ -26,17 +26,18 @@ $keywords = 'INSTITUCIÓN DE EDUCACIÓN, CAPACITACION, HABILITACION, REHABILITAC
 
 
                 <div class="right">
-                    <p>¡Quiero ayudar!</p>
+                    <p class="thankyou">¡Quiero ayudar!</p>
                     <div class="form--container">
-                        <form action="">
+                        <form action="" method="POST" enctype="" class="form" name="form">
                             <div class="mail">
-                                <input type="email" placeholder="tucorreo@mail.com">
+                                <input type="email" placeholder="tucorreo@mail.com" name="email">
                             </div>
                             <div class="send">
-                                <input type="submit" value="" placeholder="">
+                                <input type="submit" value="" placeholder="" name="send">
                                 <i class="icon-right"></i>
                             </div>
                         </form>
+                        <?php include 'lib/send-form.php'; ?>
                     </div>
                 </div>
                 <div class="left">
