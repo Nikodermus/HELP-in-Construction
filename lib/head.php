@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 
 <?php 
-$language = 'es' ;
+$language = 'es_CO' ;
 $site_name = 'Fundación HELP' ;
-$site_url = 'help.dakio.co' ; 
-$author = 'Dakio.co' ; 
+$site_url = 'helpfundacion.org' ; 
+$author = 'GADM' ; 
 $year = '2016' ;
 $site_color = '#c52a33' ;
-$twitter_company = '@fundahep' ;
-$twitter_author = '@wearedakio' ;
+$twitter_company = '@fundahelp' ;
+$twitter_author = '@gadmagazine' ;
 $facebook_id = '1799842100292404' ;
+$facebook_author = 'https://www.facebook.com/GADMagazine/';
+
       ?>
 
     <html lang="<?php echo $language ?>">
@@ -36,17 +38,18 @@ $facebook_id = '1799842100292404' ;
         <meta property="fb:app_id" content="<?php echo $facebook_id ?>" />
         <meta property="og:title" content="<?php echo $title ?>" />
         <meta property="og:site_name" content="<?php echo $site_name ?>" />
-        <meta property="og:url" content="http://www.<?php echo $site_url ?>" />
+        <meta property="og:url" content="http://<?php echo $site_url ?>" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="http://www.<?php echo $site_url ?>/assets/facebook-preview.jpg" />
+        <meta property="og:image" content="http://<?php echo $site_url ?>/assets/facebook-preview.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="<?php echo $language ?>">
         <meta property="og:description" content="<?php echo $description ?>" />
+        <meta property="article:author" content="<?php echo $facebook_author ?>" />
 
         <!--Google+ data-->
-        <meta itemprop="image" content="http://www.<?php echo $site_url ?>/assets/schema-preview.jpg">
+        <meta itemprop="image" content="http://<?php echo $site_url ?>/assets/schema-preview.jpg">
         <meta itemprop="description" content="<?php echo $description ?>">
         <meta itemprop="name" content="<?php echo $title ?>">
 
@@ -57,7 +60,7 @@ $facebook_id = '1799842100292404' ;
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="<?php echo $twitter_company ?>">
         <meta name="twitter:creator" content="<?php echo $twitter_author ?>">
-        <meta name="twitter:image:src" content="http://www.<?php echo $site_url ?>/assets/twitter-preview.jpg">
+        <meta name="twitter:image:src" content="http://<?php echo $site_url ?>/assets/twitter-preview.jpg">
         <meta name="twitter:image:width" content="870">
         <meta name="twitter:image:height" content="750">
 
@@ -73,7 +76,7 @@ $facebook_id = '1799842100292404' ;
         <meta name="msapplication-wide310x150logo" content="assets/tile-wide.png" />
 
         <!--
-        <link rel="canonical" href="http://www.<?php echo $site_url ?>" />
+        <link rel="canonical" href="http://<?php echo $site_url ?>" />
         -->
 
         <!--Apple Meta Data-->
@@ -96,13 +99,13 @@ $facebook_id = '1799842100292404' ;
         <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180x180.png">
 
         <!--Apple Load Image-->
-        <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
-        <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
-        <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-        <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
-        <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-1024x768.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
-        <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
-        <link rel="apple-touch-startup-image" href="http://www.<?php echo $site_url ?>/assets/apple-touch-startup-image-2048x1496.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+        <link rel="apple-touch-startup-image" href="http://<?php echo $site_url ?>/assets/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+        <link rel="apple-touch-startup-image" href="http://<?php echo $site_url ?>/assets/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+        <link rel="apple-touch-startup-image" href="http://<?php echo $site_url ?>/assets/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+        <link rel="apple-touch-startup-image" href="http://<?php echo $site_url ?>/assets/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+        <link rel="apple-touch-startup-image" href="http://<?php echo $site_url ?>/assets/apple-touch-startup-image-1024x768.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+        <link rel="apple-touch-startup-image" href="http://<?php echo $site_url ?>/assets/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+        <link rel="apple-touch-startup-image" href="http://<?php echo $site_url ?>/assets/apple-touch-startup-image-2048x1496.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
 
         <!--Favicon-->
         <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
